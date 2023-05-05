@@ -23,7 +23,7 @@ const QRCodeHandler = async () => {
     const eventURL = window.location.toString()
     // const apiUrl = `https://api.qr-code-generator.com/v1/create/?data=${encodeURIComponent(eventURL)}&apikey=${apiKey}`
     const coors = "https://cors-anywhere.herokuapp.com/"
-    const apiURL = `https://api.qr-code-generator.com/v1/create?access-token=${apiKey}`
+    const apiURL = `${coors}https://api.qr-code-generator.com/v1/create?access-token=${apiKey}`
 
     const response = await fetch(apiURL, {
         method: "POST",
