@@ -17,7 +17,8 @@ const QRCodeHandler = async () => {
             qr_code_logo: "scan-me-square"
         }),
         headers: { "Content-Type": "application/json", 
-        'Access-Control-Allow-Origin': 'https://shrouded-sea-42422.herokuapp.com/' }
+        'Access-Control-Allow-Origin': 'https://shrouded-sea-42422.herokuapp.com/' },
+        mode: "cors"
     })
 
     if (response.ok) {
